@@ -145,6 +145,11 @@ const addRow = function () {
 addRow();
 //36) Write a function to add a class of "test" to each row in the table
 
+const changeStyleEachRow = function () {
+  let rowId = document.getElementById("addrow");
+  rowId.classList.add("test");
+};
+changeStyleEachRow();
 //37) Write a function to add a red background to every link in the page
 const backgroundLink = function () {
   const getlink = document.querySelectorAll("a");
