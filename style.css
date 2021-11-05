@@ -4,3 +4,56 @@ td {
   border: 1px solid black;
   border-collapse: collapse;
 }
+body {
+  background-color: rgb(238, 207, 207);
+  margin-left: 100px;
+  margin-right: 100px;
+}
+h1 {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+a {
+  color: red;
+}
+.border {
+  border: 1px solid black;
+  border-radius: 30px;
+}
+p {
+  margin: 25px;
+}
+
+.font {
+  font-size: large;
+  font-weight: bold;
+}
+.hiddenContent {
+  visibility: hidden;
+}
+td {
+  border: 1px solid green;
+}
+tr td {
+  border-left: 1px dotted red;
+}
+td {
+  border-bottom: 1px dotted red;
+  border-top: 1px dotted red;
+  border-left: 1px dotted red;
+  border-right: 1px dotted red;
+}
+/*
+CSS EXERCISES
+
+        11) Give a maximum width to the body and center it into the page
+        12) Set every h1 to be centered
+        13) Change the color of each link in the page
+        14) Create a class with a border assigned to it
+        15) Set the previously created table to have rounded corners  TODO later
+        16) Add a margin between every paragraph
+        17) Create a class which changes font size and text weight when applied
+        18) Create a class to hide a piece of content
+        19) Add a green border to each <td>  
+        20) Add a dotted red border to each <tr> (note: <tr> does not accept a border property)
+        */
