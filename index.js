@@ -131,6 +131,13 @@ changeHeading("Heading of Page");
 //36) Write a function to add a class of "test" to each row in the table
 
 //37) Write a function to add a red background to every link in the page
+const backgroundLink = function () {
+  const getlink = document.querySelectorAll("a");
+  for (let changeColor of getlink) {
+    changeColor.style.color = "green";
+  }
+};
+backgroundLink();
 
 //38) Console log "Page loaded" when the page is correctly loaded
 window.onload = function () {
