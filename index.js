@@ -139,6 +139,13 @@ window.onload = function () {
 
 //39) Write a function to add new items to a unordered list
 
+const newItemInList = function () {
+  const getlist = document.querySelector("ol");
+  const creatLi = document.createElement("li");
+  creatLi.innerHTML = "New Item List";
+  getlist.appendChild(creatLi);
+};
+newItemInList();
 //40) Write a function to empty a list  */
 const emptyList = function () {
   const ul = document.querySelector("ul");
