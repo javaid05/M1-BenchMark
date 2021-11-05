@@ -96,3 +96,52 @@ const higherSum = function (array1, array2) {
   return sum >= sum1 ? sum : sum1;
 };
 console.log(higherSum([3, 4, 5], [4, 5, 6]));
+/*
+ DOM EXERCISES
+
+        31) Get the element with an id of "container" from the page
+        32) Get every <td> element from the page
+        33) Use a loop for printing the text inside of every <td> element in the page TODO
+        34) Write a function to change the heading of the page
+        35) Write a function to add an extra row to the table
+        36) Write a function to add a class of "test" to each row in the table
+        37) Write a function to add a red background to every link in the page
+        38) Console log "Page loaded" when the page is correctly loaded
+        39) Write a function to add new items to a unordered list
+        40) Write a function to empty a list  */
+console.log("-------------Dom Exercise------------ ");
+
+//31) Get the element with an id of "container" from the page
+let getID = document.getElementById("orderList");
+
+//32) Get every <td> element from the page
+
+let getTd = document.querySelectorAll("td");
+//33) Use a loop for printing the text inside of every <td> element in the page
+
+//34) Write a function to change the heading of the page
+const changeHeading = function (heading) {
+  let h1 = document.querySelector("h1");
+  h1.innerHTML = heading;
+};
+changeHeading("Heading of Page");
+
+//35) Write a function to add an extra row to the table
+
+//36) Write a function to add a class of "test" to each row in the table
+
+//37) Write a function to add a red background to every link in the page
+
+//38) Console log "Page loaded" when the page is correctly loaded
+window.onload = function () {
+  console.log("Page Load");
+};
+
+//39) Write a function to add new items to a unordered list
+
+//40) Write a function to empty a list  */
+const emptyList = function () {
+  const ul = document.querySelector("ul");
+  ul.innerHTML = "";
+};
+emptyList();
