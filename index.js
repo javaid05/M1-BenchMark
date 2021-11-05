@@ -37,4 +37,62 @@ for (let i = 1; i <= 10; i++) {
 }
 console.log(stringArray);
 
-//25
+//25 :Print in the console every string from the previous array
+for (let everyString of stringArray) {
+  console.log(everyString);
+}
+
+//26:  26) Create an array with 100 random numbers in it
+
+let randonArray = [];
+for (let i = 1; i <= 100; i++) {
+  randonArray.push(Math.round(Math.random() * 100));
+}
+console.log(randonArray);
+//2x27Write a function to get the maximum and minimum values from the previously created array
+
+let numberOfArray;
+const maxNumberGet = function () {
+  numberOfArray = randonArray;
+  console.log(Math.max.apply(null, randonArray));
+};
+maxNumberGet();
+
+// 2x 28: Create an array of arrays, in which every array has 10 random numbers
+let outerArray = [];
+for (let i = 1; i <= 10; i++) {
+  let innerArray = [];
+  for (let i = 1; i <= 10; i++) {
+    innerArray.push(Math.round(Math.random() * 10));
+  }
+  outerArray.push(innerArray);
+}
+console.log(outerArray);
+
+//29) Create a function that gets 2 arrays as parameters and returns the longest one
+
+const longestArray = function (arr1, arr2) {
+  if (arr1 > arr2) {
+    // console.log("first Array is Bigger", arr1); with this show undefine after printing the array
+    return arr1; // working fine
+  } else {
+    // console.log("Second array is Bigger", arr2);
+    return arr2;
+  }
+};
+console.log(longestArray([1, 2, 3, 4], [1, 2, 3, 4, 5, 6]));
+
+//30) Create a function that gets 2 arrays of numbers as parameters and returns the one with the higher sum of values*/
+
+const higherSum = function (array1, array2) {
+  let sum = 0;
+  for (let number of array1) {
+    sum += number;
+  }
+  let sum1 = 0;
+  for (let number of array2) {
+    sum1 += number;
+  }
+  return sum >= sum1 ? sum : sum1;
+};
+console.log(higherSum([3, 4, 5], [4, 5, 6]));
