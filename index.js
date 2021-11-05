@@ -127,7 +127,22 @@ const changeHeading = function (heading) {
 changeHeading("Heading of Page");
 
 //35) Write a function to add an extra row to the table
+const addRow = function () {
+  let table = document
+    .getElementById("tableID")
+    .getElementsByTagName("tbody")[0];
+  let newRow = table.insertRow();
 
+  let newCell = newRow.insertCell();
+  let newText = document.createTextNode("new row");
+  // for (let i = 1; i < 6; i++) {
+  //   let newText = document.createTextNode("new row");
+  //   return newText;
+  // }
+
+  newCell.appendChild(newText);
+};
+addRow();
 //36) Write a function to add a class of "test" to each row in the table
 
 //37) Write a function to add a red background to every link in the page
